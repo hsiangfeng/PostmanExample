@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "4b72b90a-2f7d-4e87-a661-e982ec8a0492",
+		"name": "Random User Generator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得單一使用者資料",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/api",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"api"
+					]
+				},
+				"description": "這是使用 Random User Generator API 所建立的範本。"
+			},
+			"response": []
+		},
+		{
+			"name": "取得 100 筆使用者資料",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/api/?results=100",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"api",
+						""
+					],
+					"query": [
+						{
+							"key": "results",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得女性使用者",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/api/?gender=female",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"api",
+						""
+					],
+					"query": [
+						{
+							"key": "gender",
+							"value": "female"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
